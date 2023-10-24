@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Age Calculator</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="sandbox.js"></script>
+</head>
+<body>
+    <div id="calculator">
+        <h2>Age Calculator</h2>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" max="<?php echo date('Y'); ?>-12-31">
+        <button onclick="calculateAge()">Calculate Age</button>
+        <div id="result"></div>
+    </div>
+</body>
+</html>
